@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load i18n %}
 <html lang="en">
 
 <head>
@@ -31,15 +32,15 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="{%url 'index' %}">Home
+            <a class="nav-link" href="{%url 'index' %}">{% trans "Home" %}
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
+            <a class="nav-link" href="{% url 'sobre' %}">{% trans "Sobre" %}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{%url 'contato' %}">Contato</a>
+            <a class="nav-link" href="{%url 'contato' %}">{% trans "Contato" %}</a>
           </li>
         </ul>
       </div>
