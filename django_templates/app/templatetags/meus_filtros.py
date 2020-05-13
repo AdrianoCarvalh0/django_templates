@@ -1,6 +1,6 @@
 from django import template
 
-register = template.library()
+register = template.Library()
 
 @register.filter(name='remover_letra')
 def remover_letra(var,letra):
