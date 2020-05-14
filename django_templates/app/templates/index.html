@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'app/css/bootstrap.css' %}" rel="stylesheet">
@@ -49,15 +50,25 @@
     </div>
   </header>
 
+=======
+{% extends 'base.html' %}
+{% load static %}
+{% load meus_filtros %}
+{% block header %}
+{% include 'includes/header.html' with titulo='Ifsuldeminas' descricao='Em 2008, o Governo Federal deu um salto na educação do país com a criação dos Institutos Federais. Por meio da Rede Federal de Educação Profissional, Científica e Tecnológica, 31 centros federais de educação tecnológica (Cefets), 75 unidades descentralizadas de ensino (Uneds), 39 escolas agrotécnicas, 7 escolas técnicas federais e 8 escolas vinculadas a universidades deixaram de existir para formarem os Institutos Federais de Educação, Ciência e Tecnologia.' %}
+{% endblock header %}
+>>>>>>> 54c9d70abc92a43df23c580e57b24e8044dffa41
   <!-- Page Content -->
   <div class="container">
+
+    {% block conteudo %}
 
     <div class="row">
       <div class="col-md-8 mb-5">
         <h2>What We Do</h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+        <p>Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+
         <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
       </div>
       <div class="col-md-4 mb-5">
@@ -98,22 +109,8 @@
 
     </div>
     <!-- /.row -->
-
+  {% endblock conteudo %}
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; {{nome_da_empresa}} {{agora}}</p>
-    </div>
-    <!-- /.container -->
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'app/js/jquery.min.js"></script>
-  <script src="{% static 'app/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
