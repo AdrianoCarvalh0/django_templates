@@ -29,7 +29,7 @@ def index(request):
 
 
 def sobre(request):
-    return HttpResponse("Página sobre")
+    return render(request, 'sobre.html')
 
 def contato(request):
-    return HttpResponse("Página contato")
+    return render(request, 'contato.html')
